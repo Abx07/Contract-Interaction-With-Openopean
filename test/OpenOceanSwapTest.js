@@ -36,11 +36,9 @@ describe("OpenOceanSwap", function () {
     erc20Token1 = await ethers.getSigner("0x7EA2be2df7BA6E54B1A9C70676f668455E329d29");
     erc20Token2 = await ethers.getSigner("0x6B175474E89094C44Da98b954EedeAC495271d0F");
 
-    // Deploy ERC20 token contracts or use existing ones
     // Set the addresses of the impersonated tokens
     usdcToken = "0x7EA2be2df7BA6E54B1A9C70676f668455E329d29";
     daiToken = "0x6B175474E89094C44Da98b954EedeAC495271d0F";
-    // Fund the user and OpenOceanSwap contract with ERC20 tokens and ETH
   });
 
   describe("setOpenOceanContract", function () {
